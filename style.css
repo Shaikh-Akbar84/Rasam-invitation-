@@ -13,10 +13,12 @@ body {
 
 .invitation {
     background: #fff;
-    padding: 30px 50px;
+    padding: 30px 20px; /* thoda kam padding for small screens */
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 400px;
 }
 
 .invitation h1 {

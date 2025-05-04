@@ -1,56 +1,102 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffe1e6, #ffe9f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: auto;
 }
 
-.main {
-  max-width: 600px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
+.invitation {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  max-width: 600px;
+  width: 90%;
+  margin: 20px;
 }
 
-h1 {
-  color: #c0392b;
-  margin-bottom: 10px;
+.invitation h1 {
+  font-size: 32px;
+  color: #c0275e;
 }
 
-h2 {
-  color: #2c3e50;
-  margin: 10px 0;
+.invitation h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #a61947;
 }
 
-p {
+.details {
   font-size: 18px;
   color: #555;
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin: 20px 0;
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 25px 0;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .main {
-    margin: 10px;
-    padding: 15px;
+.time {
+  background: #ffe1e6;
+  padding: 10px 15px;
+  border-radius: 15px;
+  text-align: center;
+  width: 70px;
+}
+
+.time span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #c0275e;
+}
+
+.time small {
+  font-size: 12px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #c0275e;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #a61947;
+}
+
+@media (max-width: 480px) {
+  .invitation h1 {
+    font-size: 26px;
   }
 
-  p {
-    font-size: 16px;
+  .invitation h2 {
+    font-size: 20px;
   }
 
-  h1, h2 {
-    font-size: 22px;
+  .time {
+    width: 60px;
+    padding: 8px 10px;
+  }
+
+  .time span {
+    font-size: 20px;
   }
 }

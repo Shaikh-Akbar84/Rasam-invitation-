@@ -38,17 +38,21 @@ body {
 
 .countdown-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin: 25px 0;
+    padding: 0 10px; /* thoda side se gap dena mobile ke liye */
 }
 
 .time {
     background: #ffe1e6;
-    padding: 15px 20px;
+    padding: 15px 10px;
     border-radius: 15px;
     text-align: center;
-    width: 80px;
+    width: 70px;
+    flex: 1 1 70px; /* responsive blocks */
+    max-width: 80px;
 }
 
 .time span {

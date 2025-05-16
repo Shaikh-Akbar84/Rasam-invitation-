@@ -2,39 +2,40 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #ffe1e6, #ffe9f0);
+    background: black; /* black background */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     overflow-x: hidden;
     flex-direction: column;
+    color: white; /* default text color */
 }
 
 .invitation {
-    background: #fff;
-    padding: 30px 20px; /* thoda kam padding for small screens */
+    background: #1a1a1a; /* dark card background */
+    padding: 30px 20px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1); /* lighter shadow for dark bg */
     width: 90%;
     max-width: 400px;
 }
 
 .invitation h1 {
     font-size: 36px;
-    color: #c0275e;
+    color: #ff80ab; /* light pink for headings */
 }
 
 .invitation h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #a61947;
+    color: #ff4081; /* another light shade */
 }
 
 .details {
     font-size: 18px;
-    color: #555;
+    color: white;
     margin: 8px 0;
 }
 
@@ -44,16 +45,16 @@ body {
     justify-content: center;
     gap: 15px;
     margin: 25px 0;
-    padding: 0 10px; /* thoda side se gap dena mobile ke liye */
+    padding: 0 10px;
 }
 
 .time {
-    background: #ffe1e6;
+    background: #2c2c2c; /* dark grey box */
     padding: 15px 10px;
     border-radius: 15px;
     text-align: center;
     width: 70px;
-    flex: 1 1 70px; /* responsive blocks */
+    flex: 1 1 70px;
     max-width: 80px;
 }
 
@@ -61,20 +62,20 @@ body {
     display: block;
     font-size: 30px;
     font-weight: bold;
-    color: #c0275e;
+    color: #ff80ab; /* light pink digits */
 }
 
 .time small {
     font-size: 14px;
-    color: #555;
+    color: #ccc;
 }
 
 .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background: #c0275e;
-    color: #fff;
+    background: #ff4081;
+    color: black;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
@@ -82,5 +83,5 @@ body {
 }
 
 .btn:hover {
-    background: #a61947;
+    background: #ff80ab;
 }

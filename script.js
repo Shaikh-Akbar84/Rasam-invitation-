@@ -1,4 +1,4 @@
-const eventDate = new Date('2025-05-14T19:00:00').getTime();
+const eventDate = new Date('2025-05-18T19:00:00').getTime();
 
 const daysSpan = document.getElementById('days');
 const hoursSpan = document.getElementById('hours');
